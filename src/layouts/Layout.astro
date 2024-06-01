@@ -1,0 +1,79 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { description, title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+
+  <body class="px-4 pb-4 dark:bg-[#202125] dark:text-white text-gray-800">
+    <!-- Progress Bar -->
+    <div class="z-10 w-full bg-gray-300 rounded-full h-1 dark:bg-gray-700 fixed">
+      <div
+        id="progressBar"
+        class="bg-blue-600 h-1 rounded-full dark:bg-blue-500"
+        style="width: 0%"
+      >
+      </div>
+    </div>
+
+    <Header />
+
+    <slot />
+
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    color-scheme: light dark;
+  }
+  html {
+    font-family: "Onest Variable", sans-serif;
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+  @media (prefer-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+</style>
+
+<script is:inline>
+  // Scrollbar
+  window.onscroll = function () {
+    var scrollHeight = document.documentElement.scrollHeight;
+    var clientHeight = document.documentElement.clientHeight;
+    var scrollTop =
+      window.scrollY || document.body.scrollTop || document.documentElement.scrollTop;
+    scrollPercentage =
+      ((scrollTop / (scrollHeight - clientHeight)) * 100).toFixed(2) + "%";
+    var progressBarElement = document.getElementById("progressBar");
+    progressBarElement.style.width = scrollPercentage;
+  };
+</script>

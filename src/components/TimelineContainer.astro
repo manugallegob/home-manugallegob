@@ -1,0 +1,22 @@
+---
+import TimelineItem from "./TimelineItem.astro"
+
+interface Item {
+  date: string,
+  title: string,
+  university?: string,
+  description?: string
+}
+
+const {data} = Astro.props
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-light ml-3">
+  {
+    data.map((item: Item) => (
+      <li class=" ms-4 mb-0">
+        <TimelineItem {...item} />
+      </li>
+    ))
+  }
+</ol>
