@@ -25,12 +25,13 @@ import ProjectsIcon from "../icons/ProjectsIcon.astro";
 ---
 
 <Layout
-  title="Portafolio Manuel Gallego Barra - Desarrollador Web Frontend"
-  description="Programador Web Frontend"
+  title="Manuel Gallego Barra - Desarrollador Web Frontend"
+  description="Programador Web Frontend y Especialista en Marketing Digital"
 >
   <main>
     <SectionContainer
-      class="flex justify-center dark:bg-[#323639] rounded-3xl py-10 border-2 border-gray-200 w-full mt-20 sm:mt-14"
+      id="inicio"
+      class="flex justify-center dark:bg-[#323639] rounded-3xl py-10 border-2 border-gray-200 w-full mt-28 sm:mt-14"
     >
       <main class="flex flex-col gap-y-5">
         <div class="flex justify-center flex-wrap align-middle gap-x-6">
@@ -51,7 +52,7 @@ import ProjectsIcon from "../icons/ProjectsIcon.astro";
           Manuel Gallego Barra
         </h1>
         <h2 class="text-xl text-center opacity-90">
-          Desarrollador Web Frontend / Especialista en Marketing Digital.
+          Desarrollador Web Frontend - Especialista en Marketing Digital.
         </h2>
         <nav>
           <li class="flex justify-center gap-x-5 my-2">
@@ -74,36 +75,42 @@ import ProjectsIcon from "../icons/ProjectsIcon.astro";
       </h2>
       <div class="sm:grid sm:grid-cols-2 md:grid-cols-3 gap-12">
         <img
-          class="rounded-3xl mx-auto object-cover h-full max-w-96 sm:w-full"
+          class="rounded-3xl mx-auto object-cover h-full max-w-96 w-full"
           src="/manuel-gallego-pic1.jpg"
           alt=""
         />
         <div class="flex flex-col h-full justify-center md:col-span-2 mt-5 sm:mt-0">
-          <div>
-            <p>Hola, soy Manuel</p>
-            <p>
-              Desarrollador Web Frontend Junior con más de 6 años de experiencia en el
-              campo del marketing digital. He desarrollado una profunda afinidad por el
-              mundo del desarrollo web, donde he contribuido significativamente al éxito
-              de mis proyectos optimizando páginas web para mejorar el ratio de conversión
-              de mis clientes.
-            </p>
+          <p class="font-semibold">Hola, soy Manuel 👋</p>
+          <p>
+            Desarrollador Web Frontend y especialista en marketing digital. He
+            desarrollado una profunda afinidad por el mundo del desarrollo web, donde he
+            contribuido significativamente al éxito de mis proyectos optimizando páginas
+            web para mejorar el ratio de conversión de mis clientes.
+          </p>
 
-            <p>
-              Soy reconocido por mi capacidad para aprender rápidamente y mi enfoque
-              proactivo en la resolución de problemas. Mi habilidad para trabajar en
-              equipo y comunicarme efectivamente me ha permitido colaborar exitosamente en
-              proyectos multidisciplinarios, aportando soluciones innovadoras y orientadas
-              a resultados.
-            </p>
-            <p>
-              Creo firmemente en el aprendizaje continuo y estoy siempre dispuesto a
-              adquirir nuevas habilidades y enfrentar desafíos con entusiasmo y
-              determinación.
-            </p>
-          </div>
+          <p>
+            Soy reconocido por mi capacidad para aprender rápidamente y mi enfoque
+            proactivo en la resolución de problemas. Mi habilidad para trabajar en equipo
+            y comunicarme efectivamente me ha permitido colaborar exitosamente en
+            proyectos multidisciplinarios, aportando soluciones innovadoras y orientadas a
+            resultados.
+          </p>
+          <p>
+            Creo firmemente en el aprendizaje continuo y estoy siempre dispuesto a
+            adquirir nuevas habilidades y enfrentar desafíos con entusiasmo y
+            determinación.
+          </p>
         </div>
       </div>
+    </SectionContainer>
+
+    <!-- Education -->
+    <SectionContainer id="education">
+      <h2 class="text-3xl font-semibold mb-5 flex justify-center items-center gap-x-3">
+        <EducationIcon class="size-6" />
+        Formación
+      </h2>
+      <TimelineContainer data={EDUCATION} />
     </SectionContainer>
 
     <!-- Skills -->
@@ -134,15 +141,6 @@ import ProjectsIcon from "../icons/ProjectsIcon.astro";
       </div>
     </SectionContainer>
 
-    <!-- Education -->
-    <SectionContainer id="education">
-      <h2 class="text-3xl font-semibold mb-5 flex justify-center items-center gap-x-3">
-        <EducationIcon class="size-6" />
-        Formación
-      </h2>
-      <TimelineContainer data={EDUCATION} />
-    </SectionContainer>
-
     <!-- Work Experience  -->
     <SectionContainer id="experience">
       <h2 class="text-3xl font-semibold mb-5 flex justify-center items-center gap-x-3">
@@ -162,12 +160,8 @@ import ProjectsIcon from "../icons/ProjectsIcon.astro";
         Próximamente, estaré subiendo mis últimos proyectos para que puedas echarle un
         vistazo ;)
       </p>
-      <div class="rounded-3xl m-auto w-[500px] ">
-        <img
-          class="rounded-3xl"
-          src="/section-under-construction.webp"
-          alt=""
-        />
+      <div class="rounded-3xl m-auto max-w-[500px]">
+        <img class="rounded-3xl" src="/section-under-construction.webp" alt="" />
       </div>
     </SectionContainer>
   </main>
