@@ -1,24 +1,51 @@
 ---
-const { title, university, description, date } = Astro.props;
+const { title, university, project, description, date, skills, urlProject } =
+  Astro.props;
 ---
 
 <div
-  class="absolute w-3 h-3 bg-[#174EA6] dark:bg-[#174EA6] rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-light"
+  class="absolute w-3 h-3 bg-[#174EA6] dark:bg-[#4fb0ff] rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-light"
 >
 </div>
-<time class="text-sm font-normal leading-none dark:currentColor">
-  {date}
-</time>
+
 <h3 class="mt-3 text-xl font-semibold dark:text-white">
   {title}
 </h3>
 {
   university && (
-    <p class="mb-4 text-base font-light dark:text-white dark:ospanacity-80">
+    <p class="text-base font-light italic dark:text-white dark:ospanacity-80">
       {university}
     </p>
   )
 }
-<p class="mb-4 text-base font-light dark:text-white dark:opacity-80">
-  {description}
+<p class="text-base font-light italic dark:text-white dark:opacity-80">
+  {project}
 </p>
+<p class="text-sm font-normal italic leading-none dark:currentColor">
+  {date}
+</p>
+{
+  description && (
+    <p class="mb-1 mt-4 text-base font-light dark:text-white dark:opacity-80">
+      • {description}
+    </p>
+  )
+}
+
+{
+  skills && (
+    <p class="mb-1 text-base font-light dark:text-white dark:opacity-80">
+      • {skills}
+    </p>
+  )
+}
+{
+  urlProject && (
+    <p class="text-base font-light dark:text-white dark:opacity-80">
+      • 
+      <a target="_blank" href={urlProject}>
+        {urlProject}
+      </a>
+    </p>
+  )
+}

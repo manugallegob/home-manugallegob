@@ -20,7 +20,7 @@ import TailwindIcon from "../icons/TailwindIcon.astro";
 import SettingIcon from "../icons/SettingIcon.astro";
 import EducationIcon from "../icons/EducationIcon.astro";
 import UserIcon from "../icons/UserIcon.astro";
-import ProjectsIcon from "../icons/ProjectsIcon.astro";
+// import ProjectsIcon from "../icons/ProjectsIcon.astro";
 // End icons
 ---
 
@@ -36,13 +36,16 @@ import ProjectsIcon from "../icons/ProjectsIcon.astro";
       <main class="flex flex-col gap-y-5">
         <div class="flex justify-center flex-wrap align-middle gap-x-6">
           <img
-            class="rounded-full w-[110px]"
-            src="https://avatars.githubusercontent.com/u/110920373?v=4"
+            class="rounded-full w-[250px]"
+            src="https://media.licdn.com/dms/image/v2/D4D03AQFZhduDL0JLMw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732119960734?e=1737590400&v=beta&t=o4H90T-rzj53rlfW-lxSOEZhNcri7YS-L7WQOPBC6YI"
             alt="manuel gallego foto"
           />
         </div>
         <div class="flex justify-center items-center">
-          <a href="https://www.linkedin.com/in/manuelgallegobarra/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/manuelgallegobarra/"
+            target="_blank"
+          >
             <Badge>Disponible para trabajar</Badge>
           </a>
         </div>
@@ -52,11 +55,14 @@ import ProjectsIcon from "../icons/ProjectsIcon.astro";
           Manuel Gallego Barra
         </h1>
         <h2 class="text-xl text-center opacity-90">
-          Desarrollador Web Frontend - Especialista en Marketing Digital.
+          🖥️ Desarrollador Web Frontend - Especialista en Marketing Digital
         </h2>
         <nav>
           <li class="flex justify-center gap-x-5 my-2">
-            <a href="https://www.linkedin.com/in/manuelgallegobarra/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/manuelgallegobarra/"
+              target="_blank"
+            >
               <Linkedin class="size-6" />
             </a>
             <a href="https://github.com/manugallegob" target="_blank">
@@ -67,46 +73,70 @@ import ProjectsIcon from "../icons/ProjectsIcon.astro";
       </main>
     </SectionContainer>
 
-    <!-- About Me -->
-    <SectionContainer id="sobre-mi">
-      <h2 class="text-3xl font-semibold mb-5 flex justify-center items-center gap-x-3">
-        <UserIcon class="size-6" />
-        Sobre Mi
-      </h2>
-      <div class="sm:grid sm:grid-cols-2 md:grid-cols-3 gap-12">
-        <img
-          class="rounded-3xl mx-auto object-cover h-full max-w-96 w-full"
-          src="/manuel-gallego-pic1.jpg"
-          alt=""
-        />
-        <div class="flex flex-col h-full justify-center md:col-span-2 mt-5 sm:mt-0">
-          <p class="font-semibold">Hola, soy Manuel 👋</p>
-          <p>
-            Desarrollador Web Frontend y especialista en marketing digital. He
-            desarrollado una profunda afinidad por el mundo del desarrollo web, donde he
-            contribuido significativamente al éxito de mis proyectos optimizando páginas
-            web para mejorar el ratio de conversión de mis clientes.
-          </p>
-
-          <p>
-            Soy reconocido por mi capacidad para aprender rápidamente y mi enfoque
-            proactivo en la resolución de problemas. Mi habilidad para trabajar en equipo
-            y comunicarme efectivamente me ha permitido colaborar exitosamente en
-            proyectos multidisciplinarios, aportando soluciones innovadoras y orientadas a
-            resultados.
-          </p>
-          <p>
-            Creo firmemente en el aprendizaje continuo y estoy siempre dispuesto a
-            adquirir nuevas habilidades y enfrentar desafíos con entusiasmo y
-            determinación.
-          </p>
+      <!-- About Me -->
+      <SectionContainer id="sobre-mi">
+        <h2
+          class="text-3xl font-semibold mb-5 flex justify-center items-center gap-x-3"
+        >
+          <UserIcon class="size-6" />
+          Sobre Mi
+        </h2>
+        <div class="sm:grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <img
+            class="rounded-3xl mx-auto object-cover h-full max-w-96 w-full"
+            src="/manuel-gallego-2.jpg"
+            alt=""
+          />
+          <div
+            class="flex flex-col h-full justify-center md:col-span-2 mt-5 sm:mt-0"
+          >
+            <p class="font-semibold">Hola, soy Manuel 👋</p>
+            <p class="dark:opacity-80 mb-3">
+              Desarrollador Frontend con sólidos conocimientos en HTML, CSS,
+              JavaScript, TypeScript, React, Angular, Vite, Webpack, entre otras
+              herramientas del ecosistema frontend.
+            </p>
+  
+            <p class="dark:opacity-80 mb-3">
+              Desde hace más de 9 años he trabajado en la creación, optimización y
+              mantenimiento de sitios web, especializándome en plataformas como
+              WordPress, Prestashop y Shopify. En 2022, decidí dar el salto a por
+              el desarrollo de software y completé un Máster en Frontend,
+              retomando mi formación inicial como Técnico Superior en Informática
+            </p>
+            <p class="dark:opacity-80 mb-3">
+              Mi trayectoria profesional de los últimos 7 años se ha centrado en
+              el marketing digital, desempeñándome como especialista y consultor
+              SEM. Esta experiencia me ha brindado una comprensión profunda de la
+              experiencia del usuario y la importancia de desarrollar soluciones
+              web orientadas a objetivos como el incremento de ventas y la
+              generación de contactos que se traducen en clientes.
+            </p>
+            <p class="dark:opacity-80 mb-3">
+              Me destaco por mi curiosidad, capacidad de aprendizaje rápido,
+              proactividad, habilidades para la resolución de problemas y una
+              comunicación efectiva en entornos de trabajo colaborativos.
+            </p>
+          </div>
         </div>
-      </div>
+      </SectionContainer>
+
+    <!-- Work Experience  -->
+    <SectionContainer id="experience">
+      <h2
+        class="text-3xl font-semibold mb-5 flex justify-center items-center gap-x-3"
+      >
+        <ExperiencieIcon class="size-6" />
+        Experiencia Laboral
+      </h2>
+      <TimelineContainer data={EXPERIENCE} />
     </SectionContainer>
 
     <!-- Education -->
     <SectionContainer id="education">
-      <h2 class="text-3xl font-semibold mb-5 flex justify-center items-center gap-x-3">
+      <h2
+        class="text-3xl font-semibold mb-5 flex justify-center items-center gap-x-3"
+      >
         <EducationIcon class="size-6" />
         Formación
       </h2>
@@ -115,7 +145,9 @@ import ProjectsIcon from "../icons/ProjectsIcon.astro";
 
     <!-- Skills -->
     <SectionContainer class="flex flex-col justify-center" id="skills">
-      <h2 class="text-3xl font-semibold mb-5 flex justify-center items-center gap-x-3">
+      <h2
+        class="text-3xl font-semibold mb-5 flex justify-center items-center gap-x-3"
+      >
         <SettingIcon class="size-6" />
         Skills
       </h2>
@@ -141,17 +173,10 @@ import ProjectsIcon from "../icons/ProjectsIcon.astro";
       </div>
     </SectionContainer>
 
-    <!-- Work Experience  -->
-    <SectionContainer id="experience">
-      <h2 class="text-3xl font-semibold mb-5 flex justify-center items-center gap-x-3">
-        <ExperiencieIcon class="size-6" />
-        Experiencia Laboral
-      </h2>
-      <TimelineContainer data={EXPERIENCE} />
-    </SectionContainer>
+  
 
     <!-- Projects -->
-    <SectionContainer id="projects">
+    <!-- <SectionContainer id="projects">
       <h2 class="text-3xl font-semibold mb-5 flex justify-center items-center gap-x-3">
         <ProjectsIcon class="size-6" />
         Proyectos
@@ -163,6 +188,6 @@ import ProjectsIcon from "../icons/ProjectsIcon.astro";
       <div class="rounded-3xl m-auto max-w-[500px]">
         <img class="rounded-3xl" src="/section-under-construction.webp" alt="" />
       </div>
-    </SectionContainer>
+    </SectionContainer>´ -->
   </main>
 </Layout>

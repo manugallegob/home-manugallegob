@@ -2,47 +2,102 @@
 export interface ExperienceEntity {
   date: string;
   title: string;
+  project: string;
   description: string;
+  skills?: string;
+  urlProject?: string;
 }
 
 export const EXPERIENCE: ExperienceEntity[] = [
-{
+  {
     date: "jun. 2024 - Actualidad",
-    title: "Frontend Developer",
-    description: `
-    Miembro del equipo de desarrollo de la aplicación Beer Geek Menú. Actualmente en fase de desarrollo ▪︎ Tecnologías: React, TypeScript, HTML, CSS, SVG, Vite, Vitest, Git.
-    `,
+    title: "Frontend Developer React",
+    project: "Quickmock - Madrid, España",
+    description:
+      "Diseño y desarrollo de nuevos componentes y funcionalidades para QuickMock, una herramienta online open source que permite crear wireframes de baja fidelidad de forma rápida y sencilla -  Implementación de componentes interactivos utilizando tecnologías como React, TypeScript y React Konva",
+    skills:
+      "React, TypeScript, React Konva, SVG, Vite, Vitest, HTML, CSS, Playwright, entre otras",
+    urlProject: "https://www.quickmock.net/",
   },
   {
-    date: "mar. 2024 - Actualidad",
-    title: "Frontend Developer",
-    description: `
-    Miembro del equipo de desarrollo de la herramienta Mongo Modeler, una aplicación online gratuita y open source que permite crear diagramas de bases de datos documentales, y generar transformaciones a SVG, PDF y esquema de mongoDB. ▪︎ Tecnologías: React, TypeScript, HTML, CSS, SVG, Vite, Vitest, Git - https://mongomodeler.com/
-    `,
+    date: "mar. 2024 - abr. 2024",
+    title: "Frontend Developer React",
+    project: "Mongo Modeler - Madrid, España",
+    description:
+      "Miembro del equipo de desarrollo de la herramienta Mongo Modeler, una aplicación online gratuita y open source que permite crear diagramas de bases de datos documentales, y generar transformaciones a SVG, PDF y esquema de mongoDB. Implementé soluciones que mejoran la accesibilidad de los componentes, asegurando que la herramienta sea inclusiva y fácil de usar. ",
+    skills: "React, TypeScript, HTML, CSS, SVG, Vite, Vitest, Git",
+    urlProject: "https://mongomodeler.com/",
   },
   {
     date: "oct. 2021 - actualidad",
-    title: "Consultor en Marketing Digital (Google Ads y Social Ads)",
-    description: `
-    ▪︎ Implementación de estrategias personalizadas de marketing digital enfocadas en ventas y/o leads.
-    ▪︎ Desarrollo y ejecución de campañas publicitarias de paid media en Google Ads, Meta Ads y Linkedin Ads, con el objetivo de alcanzar y superar los objetivos planteados.
-    ▪︎ Diseño y optimización de sitios web de alto rendimiento para maximizar la tasa de conversión y mejorar la rentabilidad de las campañas publicitarias.    
-    `,
+    title: "Consultor en Marketing Digital",
+    project: "Online Zebra Marketing - Madrid, España",
+    description:
+      "Implementación de estrategias personalizadas de marketing digital enfocadas en ventas y/o leads  ▪︎  Desarrollo y ejecución de campañas publicitarias de paid media en Google Ads, Meta Ads y Linkedin Ads, con el objetivo de alcanzar y superar los objetivos planteados  ▪︎  Diseño y optimización de sitios web de alto rendimiento para maximizar la tasa de conversión y mejorar la rentabilidad de las campañas publicitarias.",
+    skills:
+      "Google Analytics, Google Tag Manager, Semrush, HTML, CSS, JavaScript, Google Ads, Meta Ads, Tick Tock Ads, Linkedin Ads, Google Editor",
   },
   {
     date: "dic. 2017 - oct. 2021",
-    title: "Consultor en Marketing Digital (Google Ads y Social Ads) - Key Account Manager",
-    description: `
-    ▪︎ Implementación de estrategias personalizadas de marketing digital enfocadas en ventas y/o leads.
-    ▪︎ Liderar equipos de desarrollo para la creación de sitios web a medida para el usuario final.
-    ▪︎ Diseño y optimización de sitios web de alto rendimiento para maximizar la tasa de conversión y mejorar la rentabilidad de las campañas publicitarias. 
-    `,
+    title: "Key Account Manager - Gestión de Proyectos Web - Marketing Digital",
+    project: "eXperience IT Solutions - Madrid, España",
+    description:
+      "Diseñé Wireframes para tiendas online y sitios corporativos, priorizando estructuras orientadas a la conversión. Coordiné proyectos digitales desde la planificación hasta la entrega, asegurando cumplimiento de plazos, funcionalidad y alineación con objetivos. Dirigí estrategias SEM para maximizar el retorno de inversión y fidelicé clientes mediante acciones personalizadas de marketing digital.",
+    skills:
+      "Google Analytics, Google Tag Manager, Semrush, HTML, CSS, JavaScript, Google Ads, Meta Ads, Tick Tock Ads, Linkedin Ads, Google Editor",
   },
   {
-    date: "may. 2009 - ago. 2015",
-    title: "Telefónica - Movistar",
-    description: `
-    ▪︎ Iniciando como Representante de Atención al Cliente Técnico, luego como Formador y Facilitador de Canales de Atención Telefónicos y Virtuales y, por último, finalizar mi estadía en esta maravillosa empresa como Coordinador de Canales Posventa de Terminales.`
+    date: "jun. 2017 - sept. 2017",
+    title: " Diseñador Web WordPress - Especialista SEO (Prácticas)",
+    project: "Escuela Aula CM - Madrid, España",
+    description:
+      "Auditoria SEO de la web de Aula CM (www.aulacm.com) ● Mejora del SEO On Page de la web: H1 duplicados, optimización de imágenes, corrección de enlaces rotos, optimización de meta descripciones y títulos SEO, experiencia de usuario, etc. ● Mejora del enlazado interno ● Diseño de componentes web ● Mejora de las áreas privadas y diversas secciones de la web ● Edición de vídeos en Adobe Premiere.",
+    skills:
+      "HTML, CSS, WordPress, SEO, SEM, Google Analytics, Google Tag Manager, Semrush",
   },
+  {
+    date: "dic. 2015 - dic. 2016",
+    title: "Diseñador Web - Especialista Google Ads",
+    project: "Adeslas - Madrid, España",
+    description:
+      "Creación de campañas publicitarias en Google Ads a través de la red de búsqueda de Google con el fin de captar posibles clientes ● Desarrollo de landing pages en WordPress ● Optimización de las páginas de aterrizaje para mejorar el ratio de conversión de las campañas ● Gestión de las campañas publicitarias de Google Ads del equipo de venta.",
+    skills:
+      "HTML, CSS, WordPress, Google Ads, Google Analytics",
+  },
+  {
+    date: "nov. 2014 - ago. 2015",
+    title: "Coordinador de Canales Posventa de Terminales",
+    project: "Telefónica Movistar Venezuela - Caracas, Venezuela",
+    description:
+      "Coordinar y monitorear la gestión operativa del Servicio Postventa a nivel nacional, asegurando el cumplimiento de normas, procesos y políticas por parte de Agentes Autorizados y Centros de Servicio, con el objetivo de desarrollar y mejorar el canal. Además, diseñar y desarrollar un proyecto para la atención de clientes con terminales fuera de garantía, permitiéndoles acceder a reparaciones directamente con la compañía, incluso si la garantía ha caducado o se ha anulado por incumplimiento de condiciones, evitando la necesidad de recurrir a proveedores externos.",
+  },
+  {
+    date: "ago. 2010 - nov. 2014",
+    title: "Formador de Canales de Atención Telefónicos y Virtuales",
+    project: "Telefónica Movistar Venezuela - Caracas, Venezuela",
+    description:
+      "Gestionar actividades formativas para apoyar el cumplimiento de indicadores operativos, incluyendo el entrenamiento del personal de Movistar a nivel nacional en sistemas, productos, servicios, atención al cliente, y desarrollo de habilidades. Diseñar planes formativos con enfoque pedagógico y participar como experto en la mejora de procesos de campañas como Movistar TV y Soporte Técnico. Promover la excelencia en la atención al cliente mediante la certificación y verificación del personal. Facilitar la colaboración entre proveedor y cliente, garantizando el logro de objetivos y la resolución eficiente de inconvenientes.",
+  },
+  {
+    date: "may. 2009 - ago. 2010",
+    title: "Representante de Atención al Cliente",
+    project: "Telefónica Movistar Venezuela - Caracas, Venezuela",
+    description:
+      "Soporte técnico telefónico de primer y segundo nivel a los clientes del servicio de Internet Móvil de Movistar.",
+  },
+  // {
+  //   date: "dic. 2017 - oct. 2021",
+  //   title:
+  //     "Consultor en Marketing Digital (Google Ads y Social Ads) - Key Account Manager",
+  //   description: `▪︎ Implementación de estrategias personalizadas de marketing digital enfocadas en ventas y/o leads.
+  //   ▪︎ Liderar equipos de desarrollo para la creación de sitios web a medida para el usuario final.
+  //   ▪︎ Diseño y optimización de sitios web de alto rendimiento para maximizar la tasa de conversión y mejorar la rentabilidad de las campañas publicitarias.
+  //   `,
+  // },
+  // {
+  //   date: "may. 2009 - ago. 2015",
+  //   title: "Telefónica - Movistar",
+  //   description: `▪︎ Iniciando como Representante de Atención al Cliente Técnico, luego como Formador y Facilitador de Canales de Atención Telefónicos y Virtuales y, por último, finalizar mi estadía en esta maravillosa empresa como Coordinador de Canales Posventa de Terminales.`,
+  // },
 ];
 ---
